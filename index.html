@@ -74,13 +74,32 @@
 
     .tarjeta h3 { margin-top: 0; }
 
-    .estado {
+    .estado, .descarga {
       display: inline-block;
       padding: 8px 14px;
       border-radius: 8px;
       color: #b6c8d8;
       background: #213b50;
     }
+
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+      gap: 20px;
+    }
+
+    .tarjeta p { overflow-wrap: anywhere; }
+    .tarjeta .descripcion-app { white-space: pre-wrap; }
+    .descarga {
+      margin: 4px 8px 4px 0;
+      color: #061323;
+      background: #68d5ff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .descarga:hover, .descarga:focus-visible { background: #b1eaff; }
+    .aviso { color: #bbccdc; }
+    .aviso a { color: #9edbff; }
 
     footer {
       color: #9cb1c2;
@@ -110,20 +129,18 @@
     <section id="aplicaciones">
       <h2>Nuestras aplicaciones</h2>
 
-      <article class="tarjeta">
-        <p class="etiqueta">PARA ANDROID</p>
-        <h3>Beauty Pro</h3>
-        <p>
-          Una herramienta para salones de belleza que reúne catálogo de
-          servicios, tickets, colaboradores y balances.
-        </p>
-        <span class="estado">Descarga próximamente</span>
-      </article>
+      <p class="aviso">Descarga aplicaciones publicadas por DraymSistem.
+        En Android, abre el archivo y confirma la instalación.</p>
+      <p id="estado" class="aviso" role="status">Cargando aplicaciones...</p>
+      <div id="catalogo" class="catalogo"></div>
+      <p class="aviso">Si no puedes ver el catálogo, visita las
+        <a href="https://github.com/raulonso118-jpg/Draymsistem-apps/releases">publicaciones oficiales</a>.</p>
     </section>
   </main>
 
   <footer>
     <p>DraymSistem Apps · Catálogo de aplicaciones</p>
   </footer>
+  <script src="catalogo.js" defer></script>
 </body>
 </html>
