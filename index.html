@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catálogo de aplicaciones de DraymSistem">
+  <title>DraymSistem Apps</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #eaf5ff;
+      background: #061323;
+      line-height: 1.6;
+    }
+
+    header, main, footer {
+      max-width: 1000px;
+      margin: auto;
+      padding: 24px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .marca {
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav a {
+      color: #9edbff;
+      text-decoration: none;
+    }
+
+    .portada {
+      padding: 60px 0;
+    }
+
+    .etiqueta {
+      color: #68d5ff;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 7vw, 3.5rem);
+      line-height: 1.1;
+      max-width: 700px;
+    }
+
+    .descripcion {
+      max-width: 620px;
+      color: #bbccdc;
+      font-size: 1.1rem;
+    }
+
+    .tarjeta {
+      padding: 24px;
+      border: 1px solid #264b68;
+      border-radius: 16px;
+      background: #10243a;
+      max-width: 500px;
+    }
+
+    .tarjeta h3 { margin-top: 0; }
+
+    .estado {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 8px;
+      color: #b6c8d8;
+      background: #213b50;
+    }
+
+    footer {
+      color: #9cb1c2;
+      border-top: 1px solid #264057;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="marca" href="#">DraymSistem Apps</a>
+    <nav>
+      <a href="#aplicaciones">Aplicaciones</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portada">
+      <p class="etiqueta">APLICACIONES DRAYMSISTEM</p>
+      <h1>Ideas que se convierten en herramientas.</h1>
+      <p class="descripcion">
+        Bienvenido a nuestro catálogo de aplicaciones. Aquí encontrarás
+        herramientas creadas para acompañarte en tu trabajo y tus proyectos.
+      </p>
+    </section>
+
+    <section id="aplicaciones">
+      <h2>Nuestras aplicaciones</h2>
+
+      <article class="tarjeta">
+        <p class="etiqueta">PARA ANDROID</p>
+        <h3>Beauty Pro</h3>
+        <p>
+          Una herramienta para salones de belleza que reúne catálogo de
+          servicios, tickets, colaboradores y balances.
+        </p>
+        <span class="estado">Descarga próximamente</span>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>DraymSistem Apps · Catálogo de aplicaciones</p>
+  </footer>
+</body>
+</html>
