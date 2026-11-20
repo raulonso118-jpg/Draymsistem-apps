@@ -21,7 +21,7 @@ publicaciones sin archivos compatibles no aparecen. Si se publica una
 versión antigua después de una nueva, aparecerá como la más reciente; revisa
 qué publicas. Al retirar una publicación, se mostrará la anterior disponible.
 La consulta depende de la API pública de GitHub y puede fallar temporalmente
-o llegar a su límite; la página ofrece un enlace alternativo a Releases.
+o llegar a su límite; en ese caso, los visitantes pueden intentarlo más tarde.
 
 Las versiones anteriores siguen siendo accesibles en Releases. No publiques
 claves, contraseñas, archivos de firma ni información privada. Protege tu

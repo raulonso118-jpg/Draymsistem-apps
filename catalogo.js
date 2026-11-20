@@ -73,7 +73,7 @@ async function cargarCatalogo() {
     mostrarAplicaciones(publicaciones);
   } catch (error) {
     console.error("No se pudo cargar el catálogo:", error);
-    estado.textContent = "No se pudo cargar el catálogo. Inténtalo más tarde o usa el enlace a publicaciones oficiales.";
+    estado.textContent = "No se pudo cargar el catálogo. Inténtalo más tarde.";
   }
 }
 

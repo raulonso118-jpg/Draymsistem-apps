@@ -65,6 +65,7 @@ test("rechaza enlaces externos y muestra estado vacío", async () => {
 test("informa errores de GitHub sin simular éxito", async () => {
   const { estado } = await ejecutar(async () => ({ ok: false, status: 403 }));
   assert.match(estado.textContent, /No se pudo cargar/);
+  assert.doesNotMatch(estado.textContent, /publicaciones oficiales/);
 });
 
 test("consulta todas las páginas de publicaciones", async () => {
